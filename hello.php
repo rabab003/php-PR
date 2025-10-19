@@ -1,3 +1,9 @@
 <?php
-print "Hello World";
-echo "  this is me";
+
+$name = "rabab";
+print "Hello $name";
+echo "  this is me ali  
+";
+
+$students = ["rabab","noor"];
+echo $students[0];
