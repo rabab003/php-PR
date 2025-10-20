@@ -11,7 +11,7 @@ if($grade >=98){
 }else if($grade >= 70){
     echo "good";
 }else if($grade >= 60){
-    echo " not good";
+    echo " not od";
 }
 else if($grade >= 50){
     echo "bad";
