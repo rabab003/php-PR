@@ -1,24 +1,17 @@
 <?php
  
-$name_queue= ["ali","fa","mohamed"];
+$seating_list = [
+["a1","a2","a3","a4"],
+["b1","b2","b3","b4"],
+["c1","c2","c3","c4"],
+["d1","d2","d3","d4"]
+];
 
-function enqueue($element){
-   global $name_queue;
-   array_push($name_queue, $element);
+
+for($row = 0; $row <count($seating_list); $row++){
+    for($col = 0 ; $col < count($seating_list[$row]); $col++){
+        echo $seating_list[$row][$col] . "\t";
+    }
+
+    echo "\n";
 }
-
-
-function dequeue(){
-    global $name_queue;
-    return array_shift($name_queue);
-}
-
-print_r($name_queue);
-enqueue("x");
-enqueue("Z");
-
-print_r($name_queue); 
-
-dequeue();
-
-print_r($name_queue); 
