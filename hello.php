@@ -1,12 +1,24 @@
-<?php 
+<?php
+ 
+$name_queue= ["ali","fa","mohamed"];
 
-function sumNumbers(...$nums): int 
-{
-    $theResult = array_sum($nums);
-
-    return $theResult;
+function enqueue($element){
+   global $name_queue;
+   array_push($name_queue, $element);
 }
 
 
-$result = sumNumbers(-1,32,-31,43,65);
-echo $result;
+function dequeue(){
+    global $name_queue;
+    return array_shift($name_queue);
+}
+
+print_r($name_queue);
+enqueue("x");
+enqueue("Z");
+
+print_r($name_queue); 
+
+dequeue();
+
+print_r($name_queue); 
